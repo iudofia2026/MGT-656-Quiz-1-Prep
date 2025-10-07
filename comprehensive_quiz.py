@@ -2156,25 +2156,15 @@ class ComprehensiveQuiz:
         
         print(f"\n📊 FINAL SCORE: {self.score}/{self.total_questions} ({percentage:.1f}%)")
         
-        # Grade assessment
-        if percentage >= 90:
-            grade = "A+"
-            message = "🎉 EXCELLENT! You're thoroughly prepared for the exam!"
-        elif percentage >= 80:
-            grade = "A"
-            message = "🌟 GREAT JOB! You have a strong understanding of the material!"
-        elif percentage >= 70:
-            grade = "B"
-            message = "👍 GOOD! Review the incorrect answers to improve further."
+        # Simple message based on performance
+        if percentage >= 80:
+            message = "Great job! Keep up the good work!"
         elif percentage >= 60:
-            grade = "C"
-            message = "📚 FAIR. Focus on studying the areas you missed."
+            message = "Good effort! Review the incorrect answers to improve."
         else:
-            grade = "D"
-            message = "📖 NEEDS WORK. Review all material and retake the quiz."
+            message = "Keep studying! Review the material and try again."
         
-        print(f"\n🎯 Grade: {grade}")
-        print(f"💬 {message}")
+        print(f"\n💬 {message}")
         
         # Show incorrect answers for review
         if self.incorrect_answers:
