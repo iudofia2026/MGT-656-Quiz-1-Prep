@@ -712,6 +712,711 @@ class ComprehensiveQuiz:
             )
         ])
         
+        # Additional questions based on provided URLs
+        questions.extend([
+            # Questions based on Scrum Guide (https://www.scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-US.pdf)
+            QuizQuestion(
+                "According to the Scrum Guide, what are the three pillars of Scrum?",
+                ["Transparency, Inspection, Adaptation", "Planning, Execution, Review", "Design, Build, Test", "Analyze, Design, Implement"],
+                [0],
+                "The three pillars of Scrum are Transparency, Inspection, and Adaptation as defined in the Scrum Guide.",
+                "medium"
+            ),
+            QuizQuestion(
+                "In Scrum, who is responsible for managing the Product Backlog?",
+                ["Scrum Master", "Development Team", "Product Owner", "Stakeholders"],
+                [2],
+                "The Product Owner is solely responsible for managing the Product Backlog according to the Scrum Guide.",
+                "easy"
+            ),
+            QuizQuestion(
+                "What is the maximum recommended duration for a Sprint?",
+                ["1 week", "2 weeks", "4 weeks", "1 month"],
+                [3],
+                "The Scrum Guide states that Sprints are limited to one calendar month, with shorter Sprints being preferred.",
+                "medium"
+            ),
+            QuizQuestion(
+                "According to the Scrum Guide, what happens during the Sprint Planning event?",
+                [
+                    "The team reviews the previous Sprint",
+                    "The team plans the work to be performed in the Sprint",
+                    "The team demonstrates completed work to stakeholders",
+                    "The team reflects on their process"
+                ],
+                [1],
+                "Sprint Planning is where the Scrum Team plans the work to be performed in the upcoming Sprint.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the purpose of the Daily Scrum according to the Scrum Guide?",
+                [
+                    "To plan the Sprint",
+                    "To synchronize activities and create a plan for the next 24 hours",
+                    "To review completed work",
+                    "To estimate user stories"
+                ],
+                [1],
+                "The Daily Scrum is a 15-minute event to synchronize activities and create a plan for the next 24 hours.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the purpose of the Sprint Review in Scrum?",
+                [
+                    "To plan the next Sprint",
+                    "To inspect the increment and adapt the Product Backlog",
+                    "To reflect on the team's process",
+                    "To estimate user stories"
+                ],
+                [1],
+                "The Sprint Review is for inspecting the increment and adapting the Product Backlog based on feedback.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the Definition of Done in Scrum?",
+                [
+                    "A list of tasks to complete",
+                    "A shared understanding of what it means for work to be complete",
+                    "A deadline for the Sprint",
+                    "A list of user stories"
+                ],
+                [1],
+                "The Definition of Done is a shared understanding of what it means for work to be complete.",
+                "medium"
+            ),
+
+            # Questions based on User Story Primer (https://scalingsoftwareagility.files.wordpress.com/2009/11/user-story-primer_1.pdf)
+            QuizQuestion(
+                "What is the standard format for a user story?",
+                [
+                    "As a [user type], I want [functionality], so that [benefit]",
+                    "Given [context], when [action], then [result]",
+                    "If [condition], then [action], else [alternative]",
+                    "User [name] needs [requirement] for [purpose]"
+                ],
+                [0],
+                "The standard user story format is 'As a [user type], I want [functionality], so that [benefit]'.",
+                "easy"
+            ),
+            QuizQuestion(
+                "What are the three C's of user stories?",
+                ["Card, Conversation, Confirmation", "Create, Complete, Close", "Context, Content, Conclusion", "Capture, Clarify, Confirm"],
+                [0],
+                "The three C's of user stories are Card (physical or digital representation), Conversation (discussion), and Confirmation (acceptance criteria).",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the primary purpose of user story acceptance criteria?",
+                [
+                    "To estimate story points",
+                    "To define when a story is complete and working as intended",
+                    "To assign stories to developers",
+                    "To track story progress"
+                ],
+                [1],
+                "Acceptance criteria define the conditions that must be met for a user story to be considered complete and working as intended.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the purpose of story points in user stories?",
+                [
+                    "To track time spent",
+                    "To estimate relative effort and complexity",
+                    "To assign stories to developers",
+                    "To prioritize stories"
+                ],
+                [1],
+                "Story points are used to estimate the relative effort and complexity of user stories.",
+                "medium"
+            ),
+
+            # Questions based on HTML/CSS tutorials (http://learn.shayhowe.com/html-css/building-your-first-web-page/)
+            QuizQuestion(
+                "What is the purpose of the HTML <head> element?",
+                [
+                    "To display visible content on the page",
+                    "To contain metadata and links to external resources",
+                    "To create navigation menus",
+                    "To define the page layout"
+                ],
+                [1],
+                "The <head> element contains metadata about the document and links to external resources like CSS and JavaScript files.",
+                "easy"
+            ),
+            QuizQuestion(
+                "Which HTML element is used to create the main heading of a page?",
+                ["<title>", "<h1>", "<header>", "<main>"],
+                [1],
+                "The <h1> element is used for the main heading of a page, representing the most important heading.",
+                "easy"
+            ),
+            QuizQuestion(
+                "What is the difference between <div> and <span> elements?",
+                [
+                    "<div> is inline, <span> is block",
+                    "<div> is block-level, <span> is inline",
+                    "There is no difference",
+                    "<div> is for text, <span> is for images"
+                ],
+                [1],
+                "<div> is a block-level element that takes up the full width, while <span> is an inline element that only takes up necessary space.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the purpose of CSS selectors?",
+                [
+                    "To create animations",
+                    "To target specific HTML elements for styling",
+                    "To validate HTML code",
+                    "To optimize page loading"
+                ],
+                [1],
+                "CSS selectors are used to target specific HTML elements so that styles can be applied to them.",
+                "easy"
+            ),
+            QuizQuestion(
+                "What does the CSS property 'margin' control?",
+                [
+                    "The space inside an element",
+                    "The space outside an element",
+                    "The border of an element",
+                    "The content of an element"
+                ],
+                [1],
+                "The margin property controls the space outside an element, between the element and other elements.",
+                "easy"
+            ),
+            QuizQuestion(
+                "What is the CSS box model composed of?",
+                [
+                    "Content, padding, border, margin",
+                    "Width, height, color, background",
+                    "Font, size, weight, style",
+                    "Top, right, bottom, left"
+                ],
+                [0],
+                "The CSS box model consists of content, padding, border, and margin layers.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the purpose of the HTML <meta> viewport tag?",
+                [
+                    "To add metadata",
+                    "To make the page responsive on mobile devices",
+                    "To improve SEO",
+                    "To add styling"
+                ],
+                [1],
+                "The viewport meta tag controls how the page is displayed on mobile devices, making it responsive.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the purpose of CSS media queries?",
+                [
+                    "To add animations",
+                    "To apply different styles based on device characteristics",
+                    "To validate CSS",
+                    "To optimize performance"
+                ],
+                [1],
+                "Media queries apply different CSS styles based on device characteristics like screen size.",
+                "medium"
+            ),
+
+            # Questions based on JavaScript basics (https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+            QuizQuestion(
+                "What is JavaScript primarily used for in web development?",
+                [
+                    "Styling web pages",
+                    "Creating the structure of web pages",
+                    "Adding interactivity and dynamic behavior to web pages",
+                    "Optimizing web page performance"
+                ],
+                [2],
+                "JavaScript is primarily used to add interactivity and dynamic behavior to web pages.",
+                "easy"
+            ),
+            QuizQuestion(
+                "What is a variable in JavaScript?",
+                [
+                    "A function that performs calculations",
+                    "A container for storing data values",
+                    "A type of HTML element",
+                    "A CSS property"
+                ],
+                [1],
+                "A variable in JavaScript is a container for storing data values that can be referenced and manipulated.",
+                "easy"
+            ),
+            QuizQuestion(
+                "What is the purpose of the 'addEventListener' method in JavaScript?",
+                [
+                    "To add CSS styles to elements",
+                    "To create new HTML elements",
+                    "To attach event handlers to DOM elements",
+                    "To validate form inputs"
+                ],
+                [2],
+                "addEventListener is used to attach event handlers to DOM elements, allowing JavaScript to respond to user interactions.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the difference between 'let' and 'var' in JavaScript?",
+                [
+                    "There is no difference",
+                    "'let' has block scope, 'var' has function scope",
+                    "'var' is newer than 'let'",
+                    "'let' can only be used for numbers"
+                ],
+                [1],
+                "'let' has block scope (limited to the block it's declared in), while 'var' has function scope.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is an array in JavaScript?",
+                [
+                    "A single value",
+                    "A collection of values stored in a single variable",
+                    "A function",
+                    "A CSS property"
+                ],
+                [1],
+                "An array in JavaScript is a collection of values stored in a single variable, accessible by index.",
+                "easy"
+            ),
+            QuizQuestion(
+                "What is the difference between '==' and '===' in JavaScript?",
+                [
+                    "There is no difference",
+                    "'==' compares value and type, '===' compares only value",
+                    "'==' compares only value, '===' compares value and type",
+                    "'==' is newer than '==='"
+                ],
+                [2],
+                "'==' compares only values (with type coercion), while '===' compares both value and type.",
+                "hard"
+            ),
+
+            # Questions based on Git Handbook (https://guides.github.com/introduction/git-handbook/)
+            QuizQuestion(
+                "What is the purpose of 'git init'?",
+                [
+                    "To create a new repository",
+                    "To initialize a new Git repository in the current directory",
+                    "To install Git",
+                    "To clone a remote repository"
+                ],
+                [1],
+                "'git init' initializes a new Git repository in the current directory, creating a .git folder.",
+                "easy"
+            ),
+            QuizQuestion(
+                "What does 'git clone' do?",
+                [
+                    "Creates a new branch",
+                    "Downloads a copy of a remote repository to your local machine",
+                    "Deletes a repository",
+                    "Merges two branches"
+                ],
+                [1],
+                "'git clone' downloads a complete copy of a remote repository to your local machine.",
+                "easy"
+            ),
+            QuizQuestion(
+                "What is the purpose of 'git status'?",
+                [
+                    "To commit changes",
+                    "To show the current state of the working directory and staging area",
+                    "To create a new branch",
+                    "To merge branches"
+                ],
+                [1],
+                "'git status' shows which files have been modified, staged, or are untracked.",
+                "easy"
+            ),
+            QuizQuestion(
+                "What is a 'remote' in Git?",
+                [
+                    "A local branch",
+                    "A version of the repository hosted on another computer or server",
+                    "A commit message",
+                    "A file in the repository"
+                ],
+                [1],
+                "A remote in Git is a version of the repository hosted on another computer or server, typically GitHub or similar.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What does 'git branch' do?",
+                [
+                    "Creates a new branch",
+                    "Lists all branches or creates a new one",
+                    "Deletes a branch",
+                    "Merges branches"
+                ],
+                [1],
+                "'git branch' lists all local branches, or with a name, creates a new branch.",
+                "easy"
+            ),
+            QuizQuestion(
+                "What is the purpose of 'git merge'?",
+                [
+                    "To create a new branch",
+                    "To combine changes from different branches",
+                    "To delete a branch",
+                    "To view commit history"
+                ],
+                [1],
+                "'git merge' combines changes from different branches into the current branch.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the purpose of 'git stash'?",
+                [
+                    "To create a new branch",
+                    "To temporarily save uncommitted changes",
+                    "To delete files",
+                    "To merge branches"
+                ],
+                [1],
+                "'git stash' temporarily saves uncommitted changes so you can work on something else.",
+                "medium"
+            ),
+
+            # Questions based on Go programming (https://tour.golang.org/)
+            QuizQuestion(
+                "What is the main function in Go used for?",
+                [
+                    "To define variables",
+                    "To import packages",
+                    "To serve as the entry point of a Go program",
+                    "To create structs"
+                ],
+                [2],
+                "The main function is the entry point of a Go program, where execution begins.",
+                "easy"
+            ),
+            QuizQuestion(
+                "How do you declare a variable in Go?",
+                [
+                    "var name type",
+                    "let name = value",
+                    "name := value",
+                    "Both A and C are correct"
+                ],
+                [3],
+                "In Go, you can declare variables with 'var name type' or use short declaration with 'name := value'.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is a package in Go?",
+                [
+                    "A collection of functions and variables",
+                    "A single file",
+                    "A type definition",
+                    "A variable"
+                ],
+                [0],
+                "A package in Go is a collection of functions, variables, and other code that can be imported and used.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the purpose of 'fmt.Println' in Go?",
+                [
+                    "To read input",
+                    "To print output to the console",
+                    "To create files",
+                    "To handle errors"
+                ],
+                [1],
+                "'fmt.Println' is used to print output to the console in Go programs.",
+                "easy"
+            ),
+            QuizQuestion(
+                "What is a struct in Go?",
+                [
+                    "A function",
+                    "A collection of fields with different types",
+                    "A variable",
+                    "A package"
+                ],
+                [1],
+                "A struct in Go is a collection of fields with different types, similar to a class in other languages.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the purpose of Go's 'go mod' command?",
+                [
+                    "To run Go programs",
+                    "To manage dependencies and modules",
+                    "To compile Go code",
+                    "To test Go code"
+                ],
+                [1],
+                "'go mod' is used to manage Go modules and dependencies.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the purpose of Go's 'go test' command?",
+                [
+                    "To run Go programs",
+                    "To compile Go code",
+                    "To run tests in Go packages",
+                    "To manage dependencies"
+                ],
+                [2],
+                "'go test' runs tests in Go packages, executing test functions.",
+                "medium"
+            ),
+
+            # Questions based on Design Sprint methodology (https://designsprintkit.withgoogle.com/methodology/overview)
+            QuizQuestion(
+                "What is the primary goal of a design sprint?",
+                [
+                    "To create a finished product",
+                    "To solve a critical design challenge through rapid prototyping and testing",
+                    "To train new designers",
+                    "To analyze market data"
+                ],
+                [1],
+                "Design sprints focus on solving critical design challenges through rapid prototyping and user testing.",
+                "medium"
+            ),
+            QuizQuestion(
+                "How long does a typical design sprint last?",
+                ["1 day", "5 days", "2 weeks", "1 month"],
+                [1],
+                "A typical design sprint lasts 5 days, following a structured process from understanding to testing.",
+                "easy"
+            ),
+            QuizQuestion(
+                "What happens on Day 1 of a design sprint?",
+                [
+                    "Prototyping",
+                    "User testing",
+                    "Understanding the problem and setting goals",
+                    "Creating final designs"
+                ],
+                [2],
+                "Day 1 of a design sprint focuses on understanding the problem and setting clear goals.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the purpose of 'How Might We' questions in design sprints?",
+                [
+                    "To critique existing designs",
+                    "To reframe problems as opportunities for design",
+                    "To test prototypes",
+                    "To create user personas"
+                ],
+                [1],
+                "'How Might We' questions help reframe problems as opportunities for design solutions.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the role of the 'Decider' in a design sprint?",
+                [
+                    "To facilitate the sprint",
+                    "To make final decisions when the team can't agree",
+                    "To create prototypes",
+                    "To test with users"
+                ],
+                [1],
+                "The Decider is someone with authority to make final decisions when the team can't reach consensus.",
+                "medium"
+            ),
+
+            # Questions based on Mobile UX Design principles (https://uxplanet.org/mobile-ux-design-key-principles-dee1a632f9e6)
+            QuizQuestion(
+                "What is the 'thumb zone' in mobile design?",
+                [
+                    "The area where users can easily reach with their thumb",
+                    "A type of mobile keyboard",
+                    "A gesture for scrolling",
+                    "A mobile app category"
+                ],
+                [0],
+                "The thumb zone refers to the area on a mobile screen that users can comfortably reach with their thumb.",
+                "medium"
+            ),
+            QuizQuestion(
+                "Why is it important to minimize the number of taps in mobile design?",
+                [
+                    "To save battery life",
+                    "To reduce user friction and improve usability",
+                    "To make the app load faster",
+                    "To reduce data usage"
+                ],
+                [1],
+                "Minimizing taps reduces user friction and makes the mobile experience more efficient and user-friendly.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the recommended minimum touch target size for mobile interfaces?",
+                ["32px", "44px", "56px", "64px"],
+                [1],
+                "The recommended minimum touch target size is 44px to ensure easy tapping on mobile devices.",
+                "hard"
+            ),
+            QuizQuestion(
+                "Why should important actions be placed in the thumb zone?",
+                [
+                    "To make them more visible",
+                    "To make them easily accessible for one-handed use",
+                    "To save screen space",
+                    "To improve app performance"
+                ],
+                [1],
+                "Important actions should be in the thumb zone to ensure they're easily accessible during one-handed mobile use.",
+                "medium"
+            ),
+
+            # Questions based on Web Application Architecture (https://blog.isquaredsoftware.com/2020/11/how-web-apps-work-http-server/)
+            QuizQuestion(
+                "What is the primary protocol used for communication between web browsers and servers?",
+                ["FTP", "HTTP", "SMTP", "TCP"],
+                [1],
+                "HTTP (HyperText Transfer Protocol) is the primary protocol for web browser-server communication.",
+                "easy"
+            ),
+            QuizQuestion(
+                "What is the purpose of a web server?",
+                [
+                    "To store user data",
+                    "To process requests and serve web content to clients",
+                    "To create web pages",
+                    "To manage databases"
+                ],
+                [1],
+                "A web server processes HTTP requests and serves web content (HTML, CSS, JS, images) to clients.",
+                "easy"
+            ),
+            QuizQuestion(
+                "What is the difference between static and dynamic web content?",
+                [
+                    "Static content changes, dynamic content doesn't",
+                    "Static content is served as-is, dynamic content is generated on-demand",
+                    "Static content is faster, dynamic content is slower",
+                    "There is no difference"
+                ],
+                [1],
+                "Static content is served as-is from files, while dynamic content is generated by server-side code on-demand.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the purpose of middleware in web applications?",
+                [
+                    "To store data",
+                    "To process requests between the client and server",
+                    "To create user interfaces",
+                    "To manage databases"
+                ],
+                [1],
+                "Middleware processes requests between the client and server, often handling authentication, logging, or data transformation.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the role of a database in web applications?",
+                [
+                    "To serve web pages",
+                    "To store and retrieve application data",
+                    "To handle user authentication",
+                    "To process HTTP requests"
+                ],
+                [1],
+                "Databases store and retrieve application data, providing persistent storage for web applications.",
+                "easy"
+            ),
+            QuizQuestion(
+                "What is the purpose of HTTP headers?",
+                [
+                    "To store data",
+                    "To provide metadata about the request or response",
+                    "To encrypt data",
+                    "To compress data"
+                ],
+                [1],
+                "HTTP headers provide metadata about the request or response, such as content type and caching directives.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the purpose of HTTP cookies?",
+                [
+                    "To store data on the server",
+                    "To store data on the client for state management",
+                    "To encrypt data",
+                    "To compress data"
+                ],
+                [1],
+                "HTTP cookies store data on the client side to maintain state between requests.",
+                "medium"
+            ),
+
+            # Additional networking questions based on provided URLs
+            QuizQuestion(
+                "What is the purpose of DNS caching?",
+                [
+                    "To store web pages",
+                    "To improve performance by storing DNS lookups",
+                    "To encrypt data",
+                    "To compress data"
+                ],
+                [1],
+                "DNS caching improves performance by storing DNS lookup results to avoid repeated queries.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the purpose of TCP's three-way handshake?",
+                [
+                    "To encrypt data",
+                    "To establish a reliable connection",
+                    "To compress data",
+                    "To route packets"
+                ],
+                [1],
+                "TCP's three-way handshake establishes a reliable connection before data transmission.",
+                "hard"
+            ),
+
+            # Additional UX questions based on provided URLs
+            QuizQuestion(
+                "What is the purpose of user personas in UX design?",
+                [
+                    "To track user behavior",
+                    "To represent target users and their needs",
+                    "To measure performance",
+                    "To create user accounts"
+                ],
+                [1],
+                "User personas represent target users and help designers understand user needs and behaviors.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the purpose of wireframes in UX design?",
+                [
+                    "To add visual styling",
+                    "To create low-fidelity layouts focusing on structure",
+                    "To test interactions",
+                    "To measure performance"
+                ],
+                [1],
+                "Wireframes create low-fidelity layouts that focus on structure and content placement.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the purpose of A/B testing in UX design?",
+                [
+                    "To create designs",
+                    "To compare two versions of a design to see which performs better",
+                    "To test accessibility",
+                    "To measure load times"
+                ],
+                [1],
+                "A/B testing compares two versions of a design to determine which performs better with users.",
+                "medium"
+            )
+        ])
+        
         return questions
     
     def start_quiz(self, num_questions: int = None, difficulty: str = None):
