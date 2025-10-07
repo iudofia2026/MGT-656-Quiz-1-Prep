@@ -2190,8 +2190,11 @@ def main():
     """Main function to run the quiz"""
     quiz = ComprehensiveQuiz()
     
-    print("Welcome to the Comprehensive 656.mba Exam Preparation Quiz!")
-    print("\nOptions:")
+    print("MGT 656 - Exam 1 Practice Quiz")
+    print("=" * 40)
+    
+    print("🎯 Welcome to the MGT656 Exam Preparation Quiz!")
+    print("\n📚 Quiz Options:")
     print("1. Take full quiz (50 questions, all difficulties)")
     print("2. Take easy quiz (20 questions, easy difficulty)")
     print("3. Take medium quiz (30 questions, medium difficulty)")
