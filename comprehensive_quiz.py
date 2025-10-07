@@ -1414,6 +1414,617 @@ class ComprehensiveQuiz:
                 [1],
                 "A/B testing compares two versions of a design to determine which performs better with users.",
                 "medium"
+            ),
+
+            # Additional comprehensive questions from provided URLs
+            # Scrum Guide - Advanced concepts
+            QuizQuestion(
+                "According to the Scrum Guide, what is the Development Team responsible for?",
+                [
+                    "Managing the Product Backlog",
+                    "Creating the Sprint Backlog and delivering potentially releasable increments",
+                    "Facilitating Scrum events",
+                    "Setting Sprint goals"
+                ],
+                [1],
+                "The Development Team is responsible for creating the Sprint Backlog and delivering potentially releasable increments of 'Done' product.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the recommended size for a Development Team according to the Scrum Guide?",
+                [
+                    "3-5 people",
+                    "3-9 people",
+                    "5-7 people",
+                    "7-11 people"
+                ],
+                [1],
+                "The Scrum Guide recommends 3-9 people for the Development Team to maintain effectiveness and communication.",
+                "medium"
+            ),
+            QuizQuestion(
+                "In Scrum, what happens if the Product Owner is not available during Sprint Planning?",
+                [
+                    "The Sprint is cancelled",
+                    "The Scrum Master takes over Product Owner duties",
+                    "The Sprint cannot start",
+                    "The Development Team makes assumptions about requirements"
+                ],
+                [2],
+                "The Sprint cannot start without the Product Owner, as they are essential for clarifying requirements and answering questions.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the purpose of the Sprint Retrospective according to the Scrum Guide?",
+                [
+                    "To plan the next Sprint",
+                    "To inspect how the last Sprint went and create a plan for improvements",
+                    "To demonstrate work to stakeholders",
+                    "To estimate user stories"
+                ],
+                [1],
+                "The Sprint Retrospective is for the team to inspect itself and create a plan for improvements to be enacted during the next Sprint.",
+                "medium"
+            ),
+
+            # User Story Primer - Advanced concepts
+            QuizQuestion(
+                "What is the INVEST criteria for good user stories?",
+                [
+                    "Independent, Negotiable, Valuable, Estimable, Small, Testable",
+                    "Important, Necessary, Valuable, Essential, Simple, Thorough",
+                    "Individual, Notable, Valuable, Easy, Short, True",
+                    "Internal, New, Valuable, Easy, Small, Tested"
+                ],
+                [0],
+                "INVEST stands for Independent, Negotiable, Valuable, Estimable, Small, and Testable - criteria for well-written user stories.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the primary purpose of the 'Conversation' aspect of user stories?",
+                [
+                    "To document requirements",
+                    "To facilitate communication and shared understanding between stakeholders",
+                    "To estimate story points",
+                    "To track progress"
+                ],
+                [1],
+                "The Conversation aspect of user stories facilitates communication and creates shared understanding between stakeholders.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the difference between a user story and a use case?",
+                [
+                    "There is no difference",
+                    "User stories are shorter and focus on user value, while use cases are detailed specifications",
+                    "Use cases are for developers, user stories are for users",
+                    "User stories are written in technical language"
+                ],
+                [1],
+                "User stories are brief, value-focused descriptions, while use cases are detailed specifications of system behavior.",
+                "hard"
+            ),
+
+            # HTML/CSS - Advanced concepts
+            QuizQuestion(
+                "What is the purpose of the HTML <section> element?",
+                [
+                    "To create a sidebar",
+                    "To define a thematic grouping of content with a heading",
+                    "To create a navigation menu",
+                    "To define a footer"
+                ],
+                [1],
+                "The <section> element represents a thematic grouping of content, typically with a heading.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the CSS specificity order from highest to lowest?",
+                [
+                    "Inline styles, IDs, classes, elements",
+                    "IDs, classes, inline styles, elements",
+                    "Classes, IDs, elements, inline styles",
+                    "Elements, classes, IDs, inline styles"
+                ],
+                [0],
+                "CSS specificity follows: inline styles (highest), IDs, classes, elements (lowest).",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the purpose of CSS flexbox?",
+                [
+                    "To create animations",
+                    "To provide a flexible way to layout, align and distribute space among items in a container",
+                    "To add colors to elements",
+                    "To create responsive images"
+                ],
+                [1],
+                "Flexbox provides a flexible way to layout, align and distribute space among items in a container.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the difference between CSS Grid and Flexbox?",
+                [
+                    "There is no difference",
+                    "Grid is for 2D layouts, Flexbox is for 1D layouts",
+                    "Grid is for text, Flexbox is for images",
+                    "Grid is newer, Flexbox is older"
+                ],
+                [1],
+                "CSS Grid is designed for 2D layouts (rows and columns), while Flexbox is designed for 1D layouts (either row or column).",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the purpose of CSS custom properties (CSS variables)?",
+                [
+                    "To create animations",
+                    "To store values that can be reused throughout a stylesheet",
+                    "To validate CSS",
+                    "To optimize performance"
+                ],
+                [1],
+                "CSS custom properties allow you to store values that can be reused throughout a stylesheet, making CSS more maintainable.",
+                "medium"
+            ),
+
+            # JavaScript - Advanced concepts
+            QuizQuestion(
+                "What is a closure in JavaScript?",
+                [
+                    "A function that closes the browser window",
+                    "A function that has access to variables in its outer scope even after the outer function returns",
+                    "A function that cannot be called",
+                    "A function that only works in strict mode"
+                ],
+                [1],
+                "A closure is a function that has access to variables in its outer (enclosing) scope even after the outer function returns.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the difference between 'null' and 'undefined' in JavaScript?",
+                [
+                    "There is no difference",
+                    "'null' is an assigned value representing no value, 'undefined' means a variable has been declared but not assigned",
+                    "'undefined' is an assigned value, 'null' means not declared",
+                    "'null' is for numbers, 'undefined' is for strings"
+                ],
+                [1],
+                "'null' is an assigned value representing no value, while 'undefined' means a variable has been declared but not assigned a value.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the purpose of the 'this' keyword in JavaScript?",
+                [
+                    "To reference the current object",
+                    "To reference the current object or context depending on how a function is called",
+                    "To create new objects",
+                    "To delete objects"
+                ],
+                [1],
+                "The 'this' keyword refers to the current object or context, and its value depends on how a function is called.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is a Promise in JavaScript?",
+                [
+                    "A function that always returns a value",
+                    "An object representing the eventual completion or failure of an asynchronous operation",
+                    "A variable that stores data",
+                    "A method for creating objects"
+                ],
+                [1],
+                "A Promise is an object representing the eventual completion or failure of an asynchronous operation.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the purpose of 'async/await' in JavaScript?",
+                [
+                    "To create synchronous code",
+                    "To write asynchronous code in a more readable, synchronous style",
+                    "To make code faster",
+                    "To validate data"
+                ],
+                [1],
+                "async/await allows you to write asynchronous code in a more readable, synchronous style using Promises.",
+                "hard"
+            ),
+
+            # Git - Advanced concepts
+            QuizQuestion(
+                "What is the purpose of 'git rebase'?",
+                [
+                    "To create a new branch",
+                    "To reapply commits on top of another base tip",
+                    "To delete commits",
+                    "To merge branches"
+                ],
+                [1],
+                "Git rebase reapplies commits on top of another base tip, creating a linear project history.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the difference between 'git merge' and 'git rebase'?",
+                [
+                    "There is no difference",
+                    "Merge creates a merge commit, rebase replays commits on top of another branch",
+                    "Rebase is faster, merge is slower",
+                    "Merge is for local branches, rebase is for remote branches"
+                ],
+                [1],
+                "Merge creates a merge commit combining branches, while rebase replays commits on top of another branch for a linear history.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the purpose of 'git cherry-pick'?",
+                [
+                    "To pick random commits",
+                    "To apply the changes from specific commits to the current branch",
+                    "To delete commits",
+                    "To create new commits"
+                ],
+                [1],
+                "Git cherry-pick applies the changes from specific commits to the current branch.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is a 'git hook'?",
+                [
+                    "A tool for fishing",
+                    "A script that runs automatically at certain points in the Git workflow",
+                    "A type of commit",
+                    "A branch name"
+                ],
+                [1],
+                "Git hooks are scripts that run automatically at certain points in the Git workflow, like before commits or pushes.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the purpose of 'git bisect'?",
+                [
+                    "To create branches",
+                    "To find the commit that introduced a bug using binary search",
+                    "To merge code",
+                    "To delete history"
+                ],
+                [1],
+                "Git bisect uses binary search to find the commit that introduced a bug by testing commits systematically.",
+                "hard"
+            ),
+
+            # Go Programming - Advanced concepts
+            QuizQuestion(
+                "What is the purpose of Go's 'goroutines'?",
+                [
+                    "To create variables",
+                    "To enable concurrent execution of functions",
+                    "To import packages",
+                    "To define types"
+                ],
+                [1],
+                "Goroutines enable concurrent execution of functions, allowing Go programs to handle multiple tasks simultaneously.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is a 'channel' in Go?",
+                [
+                    "A type of variable",
+                    "A communication mechanism that allows goroutines to send and receive values",
+                    "A function",
+                    "A package"
+                ],
+                [1],
+                "Channels are communication mechanisms that allow goroutines to send and receive values safely.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the purpose of Go's 'interface'?",
+                [
+                    "To create objects",
+                    "To define a set of method signatures that a type must implement",
+                    "To import packages",
+                    "To create variables"
+                ],
+                [1],
+                "Go interfaces define a set of method signatures that a type must implement to satisfy the interface.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is 'garbage collection' in Go?",
+                [
+                    "A way to delete files",
+                    "Automatic memory management that frees unused memory",
+                    "A type of variable",
+                    "A function"
+                ],
+                [1],
+                "Garbage collection in Go is automatic memory management that frees memory that is no longer being used.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the purpose of Go's 'defer' statement?",
+                [
+                    "To define functions",
+                    "To schedule a function call to be executed when the surrounding function returns",
+                    "To create loops",
+                    "To import packages"
+                ],
+                [1],
+                "The defer statement schedules a function call to be executed when the surrounding function returns.",
+                "hard"
+            ),
+
+            # Design Sprint - Advanced concepts
+            QuizQuestion(
+                "What is the purpose of 'Crazy 8s' in a design sprint?",
+                [
+                    "To create 8 different products",
+                    "To generate 8 different solutions to a problem in 8 minutes",
+                    "To work for 8 hours",
+                    "To test with 8 users"
+                ],
+                [1],
+                "Crazy 8s is a rapid ideation technique where participants sketch 8 different solutions to a problem in 8 minutes.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the purpose of 'dot voting' in design sprints?",
+                [
+                    "To count users",
+                    "To democratically select the best ideas from a group",
+                    "To create designs",
+                    "To test prototypes"
+                ],
+                [1],
+                "Dot voting allows team members to democratically select the best ideas by placing dots on their preferred options.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the 'Decider' responsible for in a design sprint?",
+                [
+                    "Creating all prototypes",
+                    "Making final decisions when the team cannot reach consensus",
+                    "Facilitating all activities",
+                    "Testing with users"
+                ],
+                [1],
+                "The Decider has the authority to make final decisions when the team cannot reach consensus during the sprint.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What happens on Day 3 of a design sprint?",
+                [
+                    "Understanding the problem",
+                    "Deciding on solutions and creating a storyboard",
+                    "Prototyping",
+                    "User testing"
+                ],
+                [1],
+                "Day 3 focuses on deciding which solutions to pursue and creating a storyboard for the prototype.",
+                "medium"
+            ),
+
+            # Mobile UX - Advanced concepts
+            QuizQuestion(
+                "What is the 'F-pattern' in mobile design?",
+                [
+                    "A type of navigation menu",
+                    "How users typically scan content on mobile devices",
+                    "A color scheme",
+                    "A layout grid"
+                ],
+                [1],
+                "The F-pattern describes how users typically scan content on mobile devices, focusing on the top and left areas.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the purpose of 'progressive disclosure' in mobile design?",
+                [
+                    "To hide all content",
+                    "To show only essential information initially and reveal more as needed",
+                    "To make everything visible at once",
+                    "To slow down the user"
+                ],
+                [1],
+                "Progressive disclosure shows only essential information initially and reveals more details as the user needs them.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the 'fat finger problem' in mobile design?",
+                [
+                    "Users having large fingers",
+                    "Accidental taps due to touch targets being too small or too close together",
+                    "Slow typing on mobile keyboards",
+                    "Difficulty scrolling"
+                ],
+                [1],
+                "The fat finger problem refers to accidental taps caused by touch targets being too small or too close together.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the purpose of 'gesture-based navigation' in mobile design?",
+                [
+                    "To replace all buttons",
+                    "To provide intuitive ways to navigate using touch gestures",
+                    "To make apps faster",
+                    "To reduce battery usage"
+                ],
+                [1],
+                "Gesture-based navigation provides intuitive ways to navigate mobile apps using touch gestures like swiping and pinching.",
+                "medium"
+            ),
+
+            # Web Architecture - Advanced concepts
+            QuizQuestion(
+                "What is the purpose of 'load balancing' in web applications?",
+                [
+                    "To make pages load faster",
+                    "To distribute incoming requests across multiple servers to improve performance and reliability",
+                    "To compress data",
+                    "To encrypt data"
+                ],
+                [1],
+                "Load balancing distributes incoming requests across multiple servers to improve performance, reliability, and availability.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the difference between 'stateless' and 'stateful' web applications?",
+                [
+                    "There is no difference",
+                    "Stateless doesn't store client data between requests, stateful maintains client state",
+                    "Stateless is faster, stateful is slower",
+                    "Stateless is for mobile, stateful is for desktop"
+                ],
+                [1],
+                "Stateless applications don't store client data between requests, while stateful applications maintain client state.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the purpose of 'CDN' (Content Delivery Network)?",
+                [
+                    "To store databases",
+                    "To deliver content from servers closer to users for faster loading",
+                    "To encrypt data",
+                    "To compress images"
+                ],
+                [1],
+                "CDNs deliver content from servers geographically closer to users, reducing latency and improving performance.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is 'caching' in web applications?",
+                [
+                    "Storing data in databases",
+                    "Storing frequently accessed data in memory or fast storage for quicker retrieval",
+                    "Compressing files",
+                    "Encrypting data"
+                ],
+                [1],
+                "Caching stores frequently accessed data in memory or fast storage to enable quicker retrieval and better performance.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the purpose of 'API versioning'?",
+                [
+                    "To make APIs faster",
+                    "To maintain backward compatibility while introducing new features",
+                    "To encrypt API calls",
+                    "To compress API responses"
+                ],
+                [1],
+                "API versioning allows maintaining backward compatibility while introducing new features and changes to the API.",
+                "hard"
+            ),
+
+            # Networking - Advanced concepts
+            QuizQuestion(
+                "What is the purpose of 'HTTPS'?",
+                [
+                    "To make websites faster",
+                    "To provide secure communication over HTTP using encryption",
+                    "To compress data",
+                    "To cache content"
+                ],
+                [1],
+                "HTTPS provides secure communication over HTTP by encrypting the data transmitted between client and server.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the difference between 'TCP' and 'UDP'?",
+                [
+                    "There is no difference",
+                    "TCP is reliable and connection-oriented, UDP is fast but unreliable",
+                    "TCP is for web, UDP is for email",
+                    "TCP is newer, UDP is older"
+                ],
+                [1],
+                "TCP provides reliable, connection-oriented communication, while UDP is faster but unreliable and connectionless.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the purpose of 'DNS'?",
+                [
+                    "To store websites",
+                    "To translate domain names to IP addresses",
+                    "To encrypt data",
+                    "To compress content"
+                ],
+                [1],
+                "DNS (Domain Name System) translates human-readable domain names to IP addresses that computers can understand.",
+                "easy"
+            ),
+            QuizQuestion(
+                "What is 'latency' in networking?",
+                [
+                    "The speed of data transmission",
+                    "The time it takes for data to travel from source to destination",
+                    "The amount of data transmitted",
+                    "The number of connections"
+                ],
+                [1],
+                "Latency is the time it takes for data to travel from source to destination, often measured in milliseconds.",
+                "medium"
+            ),
+
+            # Additional practical scenario questions
+            QuizQuestion(
+                "As a Product Owner, you receive a request to add a new feature. What should you do first?",
+                [
+                    "Immediately add it to the current sprint",
+                    "Evaluate the request against the product vision and current priorities",
+                    "Ask the development team to estimate it",
+                    "Reject it without consideration"
+                ],
+                [1],
+                "Product Owners should first evaluate new requests against the product vision and current priorities before making decisions.",
+                "hard"
+            ),
+            QuizQuestion(
+                "You're designing a mobile app for food delivery. What should be your primary consideration for the checkout button?",
+                [
+                    "Make it colorful",
+                    "Place it in the thumb zone and make it large enough for easy tapping",
+                    "Make it small to save space",
+                    "Put it at the top of the screen"
+                ],
+                [1],
+                "For critical actions like checkout, the button should be in the thumb zone and large enough for easy one-handed use.",
+                "medium"
+            ),
+            QuizQuestion(
+                "Your web application is experiencing slow loading times. What should you investigate first?",
+                [
+                    "The color scheme",
+                    "Database queries, image optimization, and caching strategies",
+                    "The user interface design",
+                    "The company logo"
+                ],
+                [1],
+                "Performance issues should be investigated by looking at database queries, image optimization, and caching strategies.",
+                "hard"
+            ),
+            QuizQuestion(
+                "You need to implement user authentication in your web application. Where should the password validation logic be placed?",
+                [
+                    "Only on the client side",
+                    "On both client and server side, with server-side being the primary validation",
+                    "Only on the server side",
+                    "In the database"
+                ],
+                [1],
+                "Password validation should be on both sides, but server-side validation is critical for security as client-side can be bypassed.",
+                "hard"
+            ),
+            QuizQuestion(
+                "Your team is using Git for version control. A developer accidentally committed sensitive data. What should you do?",
+                [
+                    "Ignore it",
+                    "Use git history rewriting tools to remove the sensitive data from the repository history",
+                    "Delete the repository",
+                    "Just add a comment"
+                ],
+                [1],
+                "Sensitive data in Git history should be removed using history rewriting tools, as simply deleting files doesn't remove them from history.",
+                "hard"
             )
         ])
         
