@@ -1,4 +1,4 @@
-# MGT 656: Quiz 1 Prep
+# MGT656: Exam 1 Practice Quiz
 
 A comprehensive terminal-based quiz application for MGT 656 exam preparation.
 
