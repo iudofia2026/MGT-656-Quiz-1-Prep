@@ -2028,6 +2028,547 @@ class ComprehensiveQuiz:
             )
         ])
         
+        # Additional Agile/Scrum Questions based on readings
+        questions.extend([
+            QuizQuestion(
+                "According to the Scrum Guide, what is the primary purpose of a Sprint?",
+                [
+                    "To complete all planned features for the release",
+                    "To create a 'Done' increment of potentially releasable functionality",
+                    "To conduct extensive testing of the product",
+                    "To gather all requirements from stakeholders"
+                ],
+                [1],
+                "The Sprint's primary purpose is to create a 'Done' increment of potentially releasable functionality, following the Scrum Guide principles.",
+                "medium"
+            ),
+            QuizQuestion(
+                "In Scrum, who is responsible for ensuring that the Development Team understands the items in the Product Backlog?",
+                [
+                    "The Scrum Master",
+                    "The Development Team Lead",
+                    "The Product Owner",
+                    "The Stakeholders"
+                ],
+                [2],
+                "The Product Owner is responsible for ensuring the Development Team understands the Product Backlog items to the level needed.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the recommended format for writing user stories according to the User Story Primer?",
+                [
+                    "As a [user type], I want [functionality] so that [benefit]",
+                    "Given [context], when [action], then [outcome]",
+                    "Feature: [description] Scenario: [steps]",
+                    "User [name] needs [requirement] because [reason]"
+                ],
+                [0],
+                "The standard user story format is 'As a [user type], I want [functionality] so that [benefit]' as outlined in the User Story Primer.",
+                "easy"
+            ),
+            QuizQuestion(
+                "Which of the following are characteristics of a good user story? (Select all that apply)",
+                [
+                    "Independent - can be developed and tested in isolation",
+                    "Negotiable - details can be discussed and refined",
+                    "Valuable - provides value to users or stakeholders",
+                    "Estimable - can be sized by the development team",
+                    "Small - can be completed in one sprint",
+                    "Testable - has clear acceptance criteria"
+                ],
+                [0, 1, 2, 3, 4, 5],
+                "Good user stories follow the INVEST criteria: Independent, Negotiable, Valuable, Estimable, Small, and Testable.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the maximum recommended duration for a Sprint according to the Scrum Guide?",
+                [
+                    "1 week",
+                    "2 weeks", 
+                    "4 weeks",
+                    "6 weeks"
+                ],
+                [2],
+                "The Scrum Guide states that Sprints are limited to one calendar month, with 4 weeks being the maximum recommended duration.",
+                "easy"
+            ),
+            QuizQuestion(
+                "In Scrum, what happens if the Product Owner is not available during a Sprint?",
+                [
+                    "The Sprint is cancelled and restarted",
+                    "The Development Team makes decisions about Product Backlog items",
+                    "The Scrum Master takes over Product Owner responsibilities",
+                    "The Sprint continues but no new work can be started"
+                ],
+                [3],
+                "If the Product Owner is unavailable, the Sprint continues but no new work can be started, as only the Product Owner can clarify requirements.",
+                "hard"
+            )
+        ])
+        
+        # Additional HTML/CSS Questions based on readings
+        questions.extend([
+            QuizQuestion(
+                "According to Shay Howe's HTML guide, what is the primary purpose of semantic HTML elements?",
+                [
+                    "To make the page load faster",
+                    "To provide meaning and structure to content",
+                    "To improve visual styling",
+                    "To reduce file size"
+                ],
+                [1],
+                "Semantic HTML elements provide meaning and structure to content, making it more accessible and maintainable.",
+                "medium"
+            ),
+            QuizQuestion(
+                "In CSS, what does the 'cascading' in Cascading Style Sheets refer to?",
+                [
+                    "The order in which styles are applied based on specificity and source",
+                    "The way styles flow from parent to child elements",
+                    "The animation effects that cascade down the page",
+                    "The inheritance of properties from parent elements"
+                ],
+                [0],
+                "Cascading refers to how CSS determines which styles to apply when multiple rules target the same element, based on specificity and source order.",
+                "hard"
+            ),
+            QuizQuestion(
+                "Which HTML element is most appropriate for marking up the main content of a webpage?",
+                [
+                    "<div>",
+                    "<section>",
+                    "<main>",
+                    "<article>"
+                ],
+                [2],
+                "The <main> element is specifically designed to contain the main content of a webpage, as recommended in modern HTML standards.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the correct way to link an external CSS file in HTML?",
+                [
+                    "<style src='styles.css'>",
+                    "<link rel='stylesheet' href='styles.css'>",
+                    "<css file='styles.css'>",
+                    "<import src='styles.css'>"
+                ],
+                [1],
+                "External CSS files are linked using the <link> element with rel='stylesheet' and href attributes.",
+                "easy"
+            ),
+            QuizQuestion(
+                "In CSS, what does the box model consist of? (Select all that apply)",
+                [
+                    "Content",
+                    "Padding",
+                    "Border",
+                    "Margin",
+                    "Outline"
+                ],
+                [0, 1, 2, 3],
+                "The CSS box model consists of content, padding, border, and margin. Outline is separate from the box model.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What is the difference between <div> and <span> elements in HTML?",
+                [
+                    "<div> is for inline content, <span> is for block content",
+                    "<div> is a block-level element, <span> is an inline element",
+                    "There is no difference between them",
+                    "<div> is semantic, <span> is not semantic"
+                ],
+                [1],
+                "<div> is a block-level element that creates line breaks, while <span> is an inline element that flows with text.",
+                "easy"
+            )
+        ])
+        
+        # Additional JavaScript Questions based on readings
+        questions.extend([
+            QuizQuestion(
+                "What is the primary purpose of JavaScript in web development?",
+                [
+                    "To style web pages",
+                    "To structure web content",
+                    "To add interactivity and dynamic behavior",
+                    "To optimize web page performance"
+                ],
+                [2],
+                "JavaScript's primary purpose is to add interactivity and dynamic behavior to web pages.",
+                "easy"
+            ),
+            QuizQuestion(
+                "Which of the following is a valid way to declare a variable in JavaScript?",
+                [
+                    "var name = 'John'",
+                    "let name = 'John'",
+                    "const name = 'John'",
+                    "All of the above"
+                ],
+                [3],
+                "JavaScript supports var, let, and const for variable declaration, each with different scoping rules.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What does the DOM (Document Object Model) represent in JavaScript?",
+                [
+                    "The CSS styling of a webpage",
+                    "The server-side data structure",
+                    "The browser's representation of HTML elements as objects",
+                    "The database schema"
+                ],
+                [2],
+                "The DOM represents HTML elements as objects that JavaScript can interact with to modify page content and behavior.",
+                "medium"
+            ),
+            QuizQuestion(
+                "Which JavaScript method is used to select an element by its ID?",
+                [
+                    "document.querySelector()",
+                    "document.getElementById()",
+                    "document.getElementsByClassName()",
+                    "document.getElementsByTagName()"
+                ],
+                [1],
+                "getElementById() is the specific method for selecting elements by their ID attribute.",
+                "easy"
+            ),
+            QuizQuestion(
+                "What is the difference between == and === in JavaScript?",
+                [
+                    "There is no difference",
+                    "== compares values only, === compares values and types",
+                    "=== is faster than ==",
+                    "== is used for objects, === for primitives"
+                ],
+                [1],
+                "== performs type coercion before comparison, while === compares both value and type without coercion.",
+                "medium"
+            ),
+            QuizQuestion(
+                "Which of the following are JavaScript data types? (Select all that apply)",
+                [
+                    "String",
+                    "Number",
+                    "Boolean",
+                    "Object",
+                    "Undefined",
+                    "Null",
+                    "Symbol"
+                ],
+                [0, 1, 2, 3, 4, 5, 6],
+                "JavaScript has six primitive data types: String, Number, Boolean, Undefined, Null, and Symbol, plus Object.",
+                "hard"
+            )
+        ])
+        
+        # Additional Git Questions based on readings
+        questions.extend([
+            QuizQuestion(
+                "What is the primary purpose of Git in software development?",
+                [
+                    "To compile source code",
+                    "To track changes and manage versions of code",
+                    "To deploy applications to servers",
+                    "To write documentation"
+                ],
+                [1],
+                "Git is a distributed version control system designed to track changes and manage different versions of code.",
+                "easy"
+            ),
+            QuizQuestion(
+                "Which Git command is used to create a new branch?",
+                [
+                    "git new branch",
+                    "git create branch",
+                    "git branch",
+                    "git checkout -b"
+                ],
+                [2, 3],
+                "Both 'git branch <name>' and 'git checkout -b <name>' can create new branches, with checkout -b also switching to the new branch.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What does 'git clone' do?",
+                [
+                    "Creates a new repository",
+                    "Downloads a copy of an existing repository",
+                    "Merges two branches together",
+                    "Deletes a repository"
+                ],
+                [1],
+                "git clone downloads a complete copy of an existing repository to your local machine.",
+                "easy"
+            ),
+            QuizQuestion(
+                "Which of the following are Git workflow stages? (Select all that apply)",
+                [
+                    "Working Directory",
+                    "Staging Area",
+                    "Local Repository",
+                    "Remote Repository"
+                ],
+                [0, 1, 2, 3],
+                "Git has four main areas: Working Directory (untracked changes), Staging Area (staged changes), Local Repository (committed changes), and Remote Repository (shared changes).",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the purpose of 'git pull'?",
+                [
+                    "To upload local changes to the remote repository",
+                    "To download and merge changes from the remote repository",
+                    "To create a new branch",
+                    "To delete a branch"
+                ],
+                [1],
+                "git pull downloads changes from the remote repository and merges them into your current branch.",
+                "medium"
+            ),
+            QuizQuestion(
+                "Which command shows the commit history in Git?",
+                [
+                    "git history",
+                    "git log",
+                    "git show",
+                    "git status"
+                ],
+                [1],
+                "git log displays the commit history with details about each commit.",
+                "easy"
+            )
+        ])
+        
+        # Additional Backend Development Questions based on readings
+        questions.extend([
+            QuizQuestion(
+                "What is the primary advantage of Go for backend development?",
+                [
+                    "It has the most libraries available",
+                    "It compiles to native code and has excellent concurrency support",
+                    "It's the easiest language to learn",
+                    "It has the best IDE support"
+                ],
+                [1],
+                "Go's main advantages are its fast compilation to native code and built-in concurrency features like goroutines.",
+                "medium"
+            ),
+            QuizQuestion(
+                "In Go, what is a goroutine?",
+                [
+                    "A type of variable",
+                    "A lightweight thread managed by the Go runtime",
+                    "A package management tool",
+                    "A testing framework"
+                ],
+                [1],
+                "Goroutines are lightweight threads managed by the Go runtime, enabling efficient concurrent programming.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the main purpose of a web server in backend development?",
+                [
+                    "To design user interfaces",
+                    "To handle HTTP requests and responses",
+                    "To write frontend code",
+                    "To manage databases only"
+                ],
+                [1],
+                "Web servers primarily handle HTTP requests from clients and send back appropriate responses.",
+                "easy"
+            ),
+            QuizQuestion(
+                "Which of the following are common backend development tasks? (Select all that apply)",
+                [
+                    "API development",
+                    "Database management",
+                    "Authentication and authorization",
+                    "Business logic implementation",
+                    "User interface design"
+                ],
+                [0, 1, 2, 3],
+                "Backend development focuses on server-side tasks like APIs, databases, security, and business logic, not UI design.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What does REST stand for in API development?",
+                [
+                    "Rapid Enterprise Software Technology",
+                    "Representational State Transfer",
+                    "Real-time Event Streaming Technology",
+                    "Reliable Enterprise Service Transport"
+                ],
+                [1],
+                "REST stands for Representational State Transfer, a popular architectural style for web APIs.",
+                "medium"
+            ),
+            QuizQuestion(
+                "In server-side development, what is middleware?",
+                [
+                    "The database layer",
+                    "Software that runs between the request and response",
+                    "The frontend framework",
+                    "The deployment environment"
+                ],
+                [1],
+                "Middleware is software that executes between receiving a request and sending a response, often handling cross-cutting concerns.",
+                "hard"
+            )
+        ])
+        
+        # Additional UX/Design Questions based on readings
+        questions.extend([
+            QuizQuestion(
+                "What is the primary goal of a Design Sprint?",
+                [
+                    "To complete the entire product design",
+                    "To test and validate ideas quickly with users",
+                    "To create detailed wireframes",
+                    "To establish the development timeline"
+                ],
+                [1],
+                "Design Sprints focus on rapidly testing and validating ideas with users to reduce risk and uncertainty.",
+                "medium"
+            ),
+            QuizQuestion(
+                "According to mobile UX principles, what is the recommended minimum touch target size?",
+                [
+                    "24px",
+                    "32px",
+                    "44px",
+                    "56px"
+                ],
+                [2],
+                "The recommended minimum touch target size for mobile interfaces is 44px to ensure easy interaction.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the purpose of user personas in UX design?",
+                [
+                    "To create fictional characters for marketing",
+                    "To represent target users and their needs",
+                    "To design the visual style of the interface",
+                    "To write technical documentation"
+                ],
+                [1],
+                "User personas represent target users and their needs, helping designers make user-centered decisions.",
+                "medium"
+            ),
+            QuizQuestion(
+                "Which of the following are key principles of mobile UX design? (Select all that apply)",
+                [
+                    "Thumb-friendly navigation",
+                    "Fast loading times",
+                    "Clear visual hierarchy",
+                    "Minimal cognitive load",
+                    "Touch-optimized interactions"
+                ],
+                [0, 1, 2, 3, 4],
+                "All of these are key principles for effective mobile UX design.",
+                "hard"
+            ),
+            QuizQuestion(
+                "What is the main benefit of conducting user testing?",
+                [
+                    "To reduce development costs",
+                    "To identify usability issues before launch",
+                    "To speed up the design process",
+                    "To create better visual designs"
+                ],
+                [1],
+                "User testing helps identify usability issues early, preventing costly fixes after launch.",
+                "medium"
+            ),
+            QuizQuestion(
+                "In design thinking, what does 'empathize' mean?",
+                [
+                    "To create emotional designs",
+                    "To understand users' needs and challenges",
+                    "To make designs more beautiful",
+                    "To reduce design complexity"
+                ],
+                [1],
+                "Empathize is the first stage of design thinking, focusing on understanding users' needs and challenges.",
+                "easy"
+            )
+        ])
+        
+        # Additional Web Application Questions based on readings
+        questions.extend([
+            QuizQuestion(
+                "What does HTTP stand for?",
+                [
+                    "HyperText Transfer Protocol",
+                    "High-Speed Transfer Protocol",
+                    "HyperText Transport Protocol",
+                    "HyperText Transmission Protocol"
+                ],
+                [0],
+                "HTTP stands for HyperText Transfer Protocol, the foundation of data communication on the web.",
+                "easy"
+            ),
+            QuizQuestion(
+                "What is the difference between HTTP and HTTPS?",
+                [
+                    "HTTPS is faster than HTTP",
+                    "HTTPS adds encryption and security to HTTP",
+                    "HTTP is for static content, HTTPS for dynamic content",
+                    "There is no difference between them"
+                ],
+                [1],
+                "HTTPS adds SSL/TLS encryption to HTTP, providing secure communication between client and server.",
+                "medium"
+            ),
+            QuizQuestion(
+                "In a typical web application architecture, what role does the client play?",
+                [
+                    "Stores all the application data",
+                    "Handles business logic and processing",
+                    "Sends requests and displays responses to users",
+                    "Manages the database"
+                ],
+                [2],
+                "The client (browser) sends requests to the server and displays the responses to users.",
+                "easy"
+            ),
+            QuizQuestion(
+                "What is the purpose of a web server in a web application?",
+                [
+                    "To display web pages to users",
+                    "To process requests and generate responses",
+                    "To store user data",
+                    "To create the user interface"
+                ],
+                [1],
+                "Web servers process incoming requests and generate appropriate responses, often by executing server-side code.",
+                "medium"
+            ),
+            QuizQuestion(
+                "Which of the following are common HTTP methods? (Select all that apply)",
+                [
+                    "GET",
+                    "POST",
+                    "PUT",
+                    "DELETE",
+                    "PATCH"
+                ],
+                [0, 1, 2, 3, 4],
+                "All of these are standard HTTP methods used for different types of operations on web resources.",
+                "medium"
+            ),
+            QuizQuestion(
+                "What happens when a user types a URL into their browser?",
+                [
+                    "The page loads instantly from cache",
+                    "The browser sends an HTTP request to the server",
+                    "The browser creates the page locally",
+                    "The browser asks the user for permission"
+                ],
+                [1],
+                "When a URL is entered, the browser sends an HTTP request to the server to fetch the requested resource.",
+                "easy"
+            )
+        ])
+        
         return questions
     
     def start_quiz(self, num_questions: int = None, difficulty: str = None):
